@@ -1,0 +1,12 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>京东爬取了10页的数码产品展示</title>
+  </head>
+  <body>
+    
+    {% for d in d_list %}
+    <p>{{d.id}}.{{d.D_name}}&nbsp;¥{{d.D_price}}&nbsp;评论数:{{d.D_count}}</p>
+    {% endfor %}
+  </body>
+</html>
